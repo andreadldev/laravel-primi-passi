@@ -22,3 +22,7 @@ Route::get('/homepage', function () {
 Route::get('/chi-siamo', function () {
     return view('chi-siamo');
 });
+
+Route::get('/contatti', function () {
+    return view('contatti');
+});

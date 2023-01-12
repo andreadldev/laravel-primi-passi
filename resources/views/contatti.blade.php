@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi siamo</title>
+    <title>Contatti</title>
     @include('cdn')
 </head>
 <body>
@@ -21,10 +21,10 @@
                         <a class="nav-link" aria-current="page" href="{{ url('homepage') }}"><i class="bi bi-house-fill me-2"></i>Home</a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link active" href=""><i class="bi bi-people-fill me-2"></i>Chi siamo</a>
+                        <a class="nav-link" href="{{ url('chi-siamo') }}"><i class="bi bi-people-fill me-2"></i>Chi siamo</a>
                     </li>
                     <li class="nav-item rounded">
-                        <a class="nav-link" href="{{ url('contatti') }}"><i class="bi bi-telephone-fill me-2"></i>Contatti</a>
+                        <a class="nav-link active" href=""><i class="bi bi-telephone-fill me-2"></i>Contatti</a>
                     </li>
                     <li class="nav-item dropdown rounded">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill me-2"></i>Profilo</a>
@@ -40,11 +40,23 @@
             </div>
         </div>
     </nav>
-    <div class="container text-center d-flex flex-column h-100 justify-content-center align-items-center">
-        <h2>Chi siamo</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quia ipsa sunt temporibus odio quibusdam, culpa perspiciatis nisi provident, eaque facilis maiores odit quis animi asperiores consequatur eos fugit voluptate praesentium corrupti? Tenetur nobis rerum expedita quaerat totam quae temporibus, dolores qui dignissimos atque, sequi at, provident itaque ea impedit? Molestias tenetur harum soluta excepturi itaque repellendus nam fuga expedita! Corrupti laudantium, facere, incidunt eos aliquam voluptate quibusdam beatae culpa dicta ipsum ipsa minus omnis eligendi quis sit ut enim quidem reiciendis ratione. Dolorum maiores veritatis cupiditate expedita assumenda sapiente quisquam eos error! Voluptates delectus quam nemo. Accusamus, aliquam enim!
-        </p>
+    <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+        <h2>Contatti</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Messaggio</label>
+                <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Invia</button>
+        </form>
     </div>
 </body>
 </html>
